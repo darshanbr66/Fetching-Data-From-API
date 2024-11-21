@@ -1,0 +1,127 @@
+/* Resetting default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    height: 80px;
+    background-color: rgb(38, 38, 158);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    background-color: rgb(46, 46, 226);
+    padding: 20px 0;
+}
+
+/* Input and buttons styling */
+.content1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchData {
+    padding: 10px;
+    height: 45px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#submitBtn, #refreshBtn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn {
+    background-color: blue;
+    color: white;
+}
+
+#submitBtn:hover {
+    background-color: darkblue;
+}
+
+#refreshBtn {
+    background-color: green;
+    color: white;
+}
+
+#refreshBtn:hover {
+    background-color: darkgreen;
+}
+
+/* Fetch data container */
+#fetchData {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+/* Footer styling */
+footer {
+    height: 80px;
+    background-color: rgb(38, 38, 158);
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Marquee styling */
+footer marquee {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    padding: 5px;
+}
+
+/* Definition Column Styling */
+table td ul {
+    margin: 5px 0; /* Add some space between sub-items */
+    padding-left: 20px; /* Indent sub-items for hierarchy */
+    list-style-type: disc; /* Use bullet points for sub-levels */
+}
+
+table td ul ul {
+    padding-left: 30px; /* Further indent for nested sub-items */
+    list-style-type: circle; /* Use different bullet style */
+}
+
+table td ul li {
+    margin-bottom: 5px; /* Add spacing between sub-items */
+    font-size: 0.9em; /* Slightly smaller font for sub-items */
+}
